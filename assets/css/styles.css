@@ -17,7 +17,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: futura-pt,'Poppins', sans-serif;
+    font-family: futura-pt-condensed,'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: futura-pt, sans-serif;
 }
 
 /* Navbar */
@@ -45,8 +49,7 @@
     font-weight: 900;
     letter-spacing: -5px;
     text-transform: none;
-    /*font-family: 'Poppins';*/
-    /*font-family: futura-pt, sans-serif; */
+    font-family: futura-pt, sans-serif;
 }
 
 .navbar__logo:hover {
@@ -58,6 +61,7 @@
     padding: 0 1rem;
     text-decoration: none;
     font-size: 1.2rem;
+    font-family: futura-pt, sans-serif;
     transition: var(--transition);
 }
 
@@ -195,6 +199,10 @@
     transition: var(--transition);
 }
 
+.hero__content .button i.fas {
+    margin-left: .8rem;
+}
+
 @media screen and (max-width: 640px) {
     .hero {
         background-position: right 0;
@@ -313,7 +321,7 @@
 }
 
 .membership__card p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .card-icon {
@@ -622,13 +630,13 @@ form {
 }
 
 .footer__title {
-    font-size: 14px;
+    font-size: 1rem;
     margin-bottom: 16px;
 }
 .footer__link {
     text-decoration: none;
     color: rgb(242,242,242);
-    font-size: 14px;
+    font-size: 1rem;
     margin-bottom: .5rem;
     transition: var(--transition);
 }
