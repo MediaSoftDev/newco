@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Catamaran|Poppins:100,200,300,400,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900);
 
 :root {
     --yellow: #F2A922;
@@ -27,7 +27,7 @@ h1,h2,h3,h4,h5,h6 {
 /* Navbar */
 
 .navbar {
-    z-index: 1;
+    z-index: 9999;
     position: fixed;
     background-color: var(--black);
     width: 100vw;
@@ -143,9 +143,25 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
+.mask {
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
 /* Section Hero */
 .hero {
-    background: linear-gradient(
+    height: 100vh;
+    position: relative;
+    
+    
+    /*background: linear-gradient(
         to right, 
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.1))
@@ -156,14 +172,16 @@ h1,h2,h3,h4,h5,h6 {
     padding: .5rem calc(100vw - 1200px)/2;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 }
 
 .hero__content {
-    color: var(--black);
+    position: absolute;
+    color: var(--white);
     padding: 3rem 5rem;
     line-height: 1;
     text-align: center;
+    z-index: 2;
 }
 
 .hero__content h1 {
@@ -172,7 +190,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .hero__content h2 {
-    color: #333;
+    color: #DDD;
     font-size: clamp(2rem,5vw,3rem);
     text-transform: uppercase;
     font-weight: 600;
