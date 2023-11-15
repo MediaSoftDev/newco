@@ -13,3 +13,15 @@ function smmothScroll(duration) {
 		}
 	});
 }
+
+$(window).scroll(function(){
+	superScrollTopButton()
+})
+
+function superScrollTopButton(){
+	if($(document).scrollTop()>50) {
+		$('#btnTop a').addClass('super-btn-top');
+	}else {
+		$('#btnTop a').removeClass('super-btn-top');
+	}
+}

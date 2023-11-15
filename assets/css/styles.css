@@ -3,9 +3,11 @@
 :root {
     --yellow: #F2A922;
     --yellowdark: #F2921D;
+    --gold: #F8D902;
     --red: #F9032F;
     --black: #000;
     --white: #FFF;
+    --tomato: #D92211;
     --butano: rgb(275,85,25);
     --green: rgb(83, 236, 7);
     --transition: all 500ms cubic-bezier(0.25, 0.35, 0, 1.74);
@@ -15,7 +17,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: futura-pt,'Poppins', sans-serif;
 }
 
 /* Navbar */
@@ -36,14 +38,15 @@
 }
 
 .navbar__logo {
-    color: var(--green);
+    color: var(--gold);
     padding-left: 1rem;
     text-decoration: none;
     font-size: 2.5rem;
     font-weight: 900;
     letter-spacing: -5px;
     text-transform: none;
-    font-family: 'Poppins';
+    /*font-family: 'Poppins';*/
+    /*font-family: futura-pt, sans-serif; */
 }
 
 .navbar__logo:hover {
@@ -59,7 +62,7 @@
 }
 
 .navbar__link:hover {
-    background-color: var(--green);
+    background-color: var(--gold);
     color: var(--black);
     padding: 1.2rem;
     font-weight: 600;
@@ -174,10 +177,10 @@
 
 .hero__content .button {
     text-decoration: none;
-    background-color: var(--green);
+    text-transform: uppercase;
+    background-color: var(--gold);
     color: var(--black);
-    padding: 1.2rem; 
-    font-family: 'Poppins';
+    padding: 1.2rem;
     font-size: clamp(2rem,4vw,3rem);
     font-weight: bold;
     border-radius: 4px;
@@ -188,7 +191,7 @@
 
 .hero__content .button:hover {
     background-color: var(--black);
-    color: var(--green);
+    color: var(--gold);
     transition: var(--transition);
 }
 
@@ -231,7 +234,7 @@
 
 
 .topline {
-    color: var(--red);
+    color: var(--tomato);
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -253,7 +256,7 @@
 }
 
 .fa-check-circle {
-    color: var(--red);
+    color: var(--tomato);
     margin-right: .5rem;
 }
 
@@ -316,7 +319,7 @@
 .card-icon {
     font-size: 4rem;
     margin-bottom: 2rem;
-    color: var(--red);
+    color: var(--tomato);
 }
 
 .membership__card h3 {
@@ -325,7 +328,7 @@
 }
 
 .membership__card .button {
-    background-color: var(--red);
+    background-color: var(--tomato);
     color: var(--white);
     padding: 1.2rem 2.5rem;
     text-decoration: none;
@@ -486,7 +489,7 @@
 }
 
 .form__wrap .button {
-    background-color: var(--red);
+    background-color: var(--tomato);
     color: var(--white);
     padding: 1.2rem 2.5rem;
     text-decoration: none;
@@ -574,7 +577,7 @@ form {
 }
 
 .footer__desc h1 {
-    color: var(--green);
+    color: var(--gold);
     font-size: 2rem;
     letter-spacing: -5px;
     margin-bottom: 2rem;
@@ -592,7 +595,7 @@ form {
 #phone .fab {
     font-size: 1.2rem;
     font-weight: bold;
-    color: var(--green);
+    color: var(--gold);
 }
 
 #email {
@@ -631,7 +634,7 @@ form {
 }
 
 .footer__link:hover {
-    color: var(--green);
+    color: var(--gold);
 }
 
 .footer__link .fab {
@@ -655,7 +658,7 @@ form {
 }
 
 .copyright {
-    background-color: var(--butano);
+    background-color: var(--tomato);
     color: var(--white);
     padding: 1rem calc((100vw - 1200px)/2);
     display: flex;
@@ -665,3 +668,79 @@ form {
     text-transform: capitalize;
     font-size: 100%;
 }
+
+#btnTop a.super-btn-top {
+    text-decoration: none;
+    background: var(--tomato);
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    color: var(--white);
+    z-index: 999;
+    font-size: 30px;
+    line-height: 50px;
+    -webkit-animation-name: superBtnTopScroll;
+            animation-name: superBtnTopScroll;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: 1;
+    -webkit-transform-origin: center bottom;
+        -ms-transform-origin: center bottom;
+            transform-origin: center bottom; }
+    #btnTop a.super-btn-top i {
+      margin-left: 12px; }
+  
+  @-webkit-keyframes superBtnTopScroll {
+    0% { }
+    from, 20%, 53%, 80%, to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+              animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); }
+    40%, 43% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+              animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -30px, 0);
+              transform: translate3d(0, -30px, 0); }
+    70% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+              animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -15px, 0);
+              transform: translate3d(0, -15px, 0); }
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+              transform: translate3d(0, -4px, 0); }
+    100% { } }
+  
+  @keyframes superBtnTopScroll {
+    0% { }
+    from, 20%, 53%, 80%, to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+              animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); }
+    40%, 43% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+              animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -30px, 0);
+              transform: translate3d(0, -30px, 0); }
+    70% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+              animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -15px, 0);
+              transform: translate3d(0, -15px, 0); }
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+              transform: translate3d(0, -4px, 0); }
+    100% { } }

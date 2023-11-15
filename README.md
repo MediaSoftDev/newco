@@ -8,7 +8,7 @@ We develop Microservices based on REST software architecture, APIS construction,
 Nos puedes seguir en nuestro portafolio. https://mediasoftdev.github.io/newco/
 
 ![alt text](https://i.pinimg.com/736x/fa/59/95/fa5995fb0136678c3ceb77a2a4769d93.jpg)
-![Alt text](image.png)
+
 
 ## Contributing
 
