@@ -168,11 +168,11 @@ h1,h2,h3,h4,h5,h6 {
         , url(../img/dev-4.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100vh;*/
     padding: .5rem calc(100vw - 1200px)/2;
     display: flex;
     justify-content: center;
-    align-items: center;*/
+    align-items: center;
 }
 
 .hero__content {
