@@ -48,6 +48,16 @@ gsap.from(".animate-membership", {
   delay: 0.5,
 });
 
+gsap.from(".animate-card-left", {
+    scrollTrigger: ".animate-card",
+    duration: 1,
+    opacity: 0,
+    x: -150,
+    y: -150,
+    stagger: 0.1,
+    delay: 0.2,
+  });
+
 gsap.from(".animate-card", {
   scrollTrigger: ".animate-card",
   duration: 1,
@@ -56,6 +66,16 @@ gsap.from(".animate-card", {
   stagger: 0.1,
   delay: 0.2,
 });
+
+gsap.from(".animate-card-right", {
+    scrollTrigger: ".animate-card",
+    duration: 1,
+    opacity: 0,
+    x: 150,
+    y: -150,
+    stagger: 0.1,
+    delay: 0.2,
+  });
 
 gsap.from(".animate-work", {
   scrollTrigger: ".animate-work",
@@ -74,3 +94,4 @@ gsap.from(".animate-email", {
   stagger: 0.25,
   delay: 0.6,
 });
+
